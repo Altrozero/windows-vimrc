@@ -6,6 +6,18 @@ imap jj <Esc>
 
 :verbose imap <tab>
 
+" ===================== FIX FOR WINDOWS :)
+
+if has("win32") && has("nvim")
+  nnoremap <C-z> <nop>
+  inoremap <C-z> <nop>
+  vnoremap <C-z> <nop>
+  snoremap <C-z> <nop>
+  xnoremap <C-z> <nop>
+  cnoremap <C-z> <nop>
+  onoremap <C-z> <nop>
+endif
+
 " ===================== PLUG CONFIG
 
 call plug#begin()
