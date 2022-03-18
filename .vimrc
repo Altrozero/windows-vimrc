@@ -1,4 +1,4 @@
-set relativenumber
+set number relativenumber
 set mouse=a
 set clipboard^=unnamed,unnamedplus
 
